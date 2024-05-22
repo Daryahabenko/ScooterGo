@@ -1,0 +1,333 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;  
+}
+
+.header{
+  height: 70px;
+  display: flex;
+  width: 100%;
+  background: #579689;
+}
+
+.header-content { 
+display: flex;
+justify-content: space-between;
+}
+
+nav{
+  display: flex;
+}
+
+
+nav a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 38px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-right: 95px; /*расстояние между словами в шапке*/
+}
+
+
+.img {
+  width: 1600px;;
+  height: auto;
+  content: "";
+  margin: 15px auto;
+  border-radius: 15px;
+  margin-left: 150px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 1600px;
+  height: auto;
+}
+
+
+
+.indicatorimg {
+  width: 30px;
+  height: 30px;
+}
+
+.infographic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.infographic_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.blockInfographic {
+  background: white;
+  border-radius: 10px;
+  border: 2px solid #579689;
+  width: 284px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-style: normal;
+}
+
+.blockInfographic>img {
+  height: 70px;
+}
+
+.svg {
+  width: 50px;
+  height: 50px;
+}
+
+.click{
+  width: 130px;
+  height: 30px;
+  border-radius: 20px;
+  background: #ff7e67;
+  color: white;
+  margin-top: 5px;
+  border: #579689 solid 1px;
+}
+
+
+.scooter{
+  position: relative;
+  width: 150px;
+  height: 100px;
+  left: 826px;
+  margin-bottom: 70px;
+  margin-top: 20px;
+  transform: rotate(-0.5deg);
+  animation: moveScooter 4s infinite alternate;
+}
+
+
+
+.road{
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+}
+
+.footer {
+  height: 100%;
+  width: 100%;
+  background: #579689;
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.login {
+  background: white;
+  border: #579689 solid 2px; 
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 300px; 
+  margin: auto;
+  padding: 10px; 
+}
+  
+.login div {
+  margin-top: 15px; 
+}
+  
+.login div:first-child { 
+  margin: 0; 
+}
+  
+.login input, .login button { 
+  padding: 10px; 
+  box-sizing: border-box; 
+  width: 100%;
+  border-radius: 10px;
+  border: grey solid 1px; 
+}
+.login input:hover, .login input:active, .login input:focus  {
+  outline: 2px solid #579689;
+}
+
+.login button{
+  background: #ff7e67;
+  border: #FFFFFF solid 1px;
+  border-radius: 10px;
+}
+
+.login h1{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+}
+
+.forFormLogin{
+  margin: 10px;
+}
+
+.forma_rent{
+  background-image: url("./image4.svg");
+}
+
+.login img{
+  width: 100px;
+  height: 100px;
+  margin: 15px;
+}
+
+.news_scooter h1{
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  margin: 30px;
+  padding: 0 100px;
+}
+
+.blockNews{
+  background: white;
+  border-radius: 10px;
+  border: 2px solid #579689;
+  width: 284px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-style: normal;
+}
+
+.blockNews p {
+  padding: 5px 0 10px 0;
+}
+
+.blockNews img{
+  height: 140px;
+  width: 260px;
+}
+
+.detail{
+  background: #ff7e67;
+  width: 80px;
+  height: 25px;
+  border-radius: 10px;
+  border: #ff7e67 solid 1px;
+}
+
+button:hover{
+  background: #579689;
+  border: white solid 3px;
+}
+
+
+h1{
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  margin: 55px;
+  padding: 0 100px;
+}
+
+.footer_colum{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer a{
+  text-decoration: none;
+  list-style: none;
+  color: #FFFFFF;
+  font-family: 'Roboto';
+  font-style: normal;
+}
+
+
+@media screen and (max-width:1200px) {
+  .slider{
+    width: 200px;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:1024) {
+  .slider{
+    width: 200px;
+    height: 100px;
+  }
+}
+
+@keyframes moveScooter {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 1450px;
+  }
+}
+
+@media screen and(max-width:600px){
+  .scooter {
+   width: 50px;
+   height: 50px;
+   left: 50px;
+  }
+}
+
+
+@media screen and(max-width:600px){
+  .indicatorimg {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .footer{
+    font-size: 8px;
+    width:80% ;
+    height: 80%;
+  }
+  .footer .svg {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

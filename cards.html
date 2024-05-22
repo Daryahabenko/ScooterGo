@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="cards.css">
+    <title>Банковские карты</title>
+  </head>
+  <body>
+    <header class="header">
+        <div class="container header-content">
+            <img class="svg" src="svg.svg">
+            <nav>
+                <a  href="#news">Новости</a>
+                <a  href="#">Акции</a>
+                <a  href="reservation.html">Бронирование</a>
+                <a  href="office.html">Личный кабинет</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+      <h1>Банковские карты</h1>
+      <section class="forma_rent">
+        <form class="login">
+          <h1 class="forFormLogin">Форма для добавления карты</h1>
+          <div>
+            <label for="number_card">Номер карты</label>
+            <input name="number_card" placeholder="** ** ** ** ** **1223">
+          </div>
+          <div>
+            <label for="name">Имя пользователя</label>
+            <input name="name" placeholder="Александра">
+          </div>
+          <div>
+            <label for="surname">Фамилия пользователя</label>
+            <input name="surname" placeholder="Иванова">
+          </div>
+          <div>
+            <label for="data">Дата окончания карты</label>
+            <input name="data" placeholder="11.09.2026">
+          </div>
+          <div>
+            <label for="code">Код CVV/CVC</label>
+            <input name="code" placeholder="***">
+          </div>
+          <div>
+            <button>Добавить</button>
+          </div>
+       </form>
+      </section>
+      <table>
+        <thead>
+            <tr>
+                <th>Номер карты</th>
+                <th>Тип карты</th>
+                <th>Активность</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>123457891234567</td>
+            <td>Кредитная</td>
+            <td>Активна</td>
+          </tr>
+          <tr>
+            <td>12345789123456788</td>
+            <td>Виртуальная</td>
+            <td>Не Активна</td>
+          </tr>
+      </tbody>
+    </table>
+    <div class="buttons">
+      <button>Добавить карту</button>
+      <button>Удалить карту</button>
+    </div>
+    </main>
+    <footer class="footer">
+      <img class="svg" src="svg.svg" alt="иконка">
+        <div class="footer_colum">
+          <a href="">О нас</a>
+          <a href="">Аренда самоката</a>
+          <a href="">Новости</a>
+          <a href="">Бронирование</a>
+          <a href="">Акции</a>
+        </div>
+        <div class="footer_colum">
+          <a href="">Контакты</a>
+          <a href="">8 (800) 111-11-11</a>
+        </div>
+        
+        <div class="footer_colum">
+          <a href="">Правовая документация</a>
+          <a href="">Политика конфиденциальности</a>
+          <a href=""> Пользовательское соглашение</a>
+        </div>
+    </footer>
+    <script src="slider.js"></script>
+  </body>
+</html>

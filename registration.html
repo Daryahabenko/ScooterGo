@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="registration.css">
+    <title>Регистрация</title>
+</head>
+<header>
+    <div class="container header-content">
+        <img class="svg" src="svg.svg">
+        <nav>
+          <a  href="#news">Новости</a>
+          <a  href="#">Акции</a>
+          <a  href="reservation.html">Бронирование</a>
+          <a  href="office.html">Личный кабинет</a>
+        </nav>
+    </div>
+</header>
+<body>
+   <main>
+    <form class="transparent" id="forma">
+        <div class="form-inner">
+            <h1>Регистрация</h1>
+            <label for="name">Имя пользователя</label>
+            <input type="text" id="name" pattern="^[А-Яа-яЁё\s]+$">
+            <label for="surname">Фамилия пользователя</label>
+            <input type="text" id="surname" pattern="^[А-Яа-яЁё\s]+$">
+            <label for="patronymic">Отчество пользователя</label>
+            <input type="text" id="patronymic" pattern="^[А-Яа-яЁё\s]+$">
+            <label for="phone">Номер телефона</label>
+            <input type="tel" id="phone" pattern="^\+7[1-9]{10}$" required>
+            <label for="pasport">Паспортные данные</label>
+            <input type="pasport" id="pasport">
+            <label for="password">Пароль</label>
+            <input id="password" type="password" minlength="8" maxlength="20" required>
+            <label for="password_1">Повтор пароля</label>
+            <input id="password_1" type="password" minlength="8" maxlength="20" required>
+            <input type="checkbox" id="custom-checkbox">
+            <input id="btn_sub" type="submit" value="Отправить">
+        </div>
+    </form>
+   </main>
+   <footer class="footer">
+    <img class="svg" src="svg.svg" alt="иконка">
+    <div class="footer_colum">
+      <a href="">О нас</a>
+      <a href="">Аренда самоката</a>
+      <a href="">Новости</a>
+      <a href="">Бронирование</a>
+      <a href="">Акции</a>
+    </div>
+    <div class="footer_colum">
+      <a href="">Контакты</a>
+      <a href="">8 (800) 111-11-11</a>
+    </div>
+    
+    <div class="footer_colum">
+      <a href="">Правовая документация</a>
+      <a href="">Политика конфиденциальности</a>
+      <a href=""> Пользовательское соглашение</a>
+    </div>
+   </footer> 
+   <script src="registration.js"></script>
+</body>
+</html>

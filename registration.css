@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;  
+}
+  
+header{
+    height: 70px;
+    display: flex;
+    width: 100%;
+    background: #579689;
+}
+  
+.header-content { 
+  display: flex;
+  justify-content: space-between;
+}
+
+nav{
+    display: flex;
+}
+  
+  
+nav a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 38px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 200px; /*расстояние между словами в шапке*/
+}
+
+.transparent {
+    position: relative;
+    max-width: 400px;
+    padding: 60px 50px;
+    margin: 50px auto 0;
+    background: #ecf4f3; 
+    border: #579689 solid 2px;
+    background-size: cover;
+    border-radius: 20px;
+}
+.transparent:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.form-inner {
+    position: relative;
+}
+
+.form-inner h3 {
+    position: relative;
+    margin-top: 0;
+    color: black;
+    font-family: 'Roboto';
+    font-style: normal;;
+    font-weight: 300;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+
+.form-inner label {
+    display: block;
+    padding-left: 15px;
+    color: black;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.form-inner input {
+    display: block;
+    width:  100%;
+    padding: 0 15px;
+    margin: 5px 0 5px;
+    border-width: 0;
+    line-height: 40px;
+    border-radius: 20px;
+    color: black;
+    background: white;
+    border: gray solid 1px;
+}
+
+
+.form-inner input[type="checkbox"] {
+position: absolute;
+opacity: 0;
+}
+
+#custom-checkbox+label {
+    position: relative;
+    margin: 20px 0;
+    text-transform: none;
+    cursor: pointer;
+}
+
+#custom-checkbox+label:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    vertical-align: text-top;
+    background: black;
+}
+
+.custom-checkbox:checked+label:after {
+    content: "";
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    left: 20px;
+    top: 9px;
+    background: white;
+    transform: rotate(45deg);
+}
+
+.svg {
+    width: 50px;
+    height: 50px;
+}
+
+h1{
+    font-size: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-inner h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    height: 100%;
+    width: 100%;
+    background: #579689;
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_colum{
+    display: flex;
+    flex-direction: column;
+}
+  
+.footer a{
+    text-decoration: none;
+    list-style: none;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+  
